@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(117, 223, 122);
+    padding: 4em;
+    margin-top: 4em;
+
+}
+
+.section1>h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+}
+
+.section1>form {
+    padding-top: 1em;
+}
+
+.section1>form>input {
+    background-color: #ffff;
+    transition: 1s background-color;
+}
+
+.section1>form>input:nth-of-type(1),
+input:nth-of-type(2) {
+    margin: 0.1em 0;
+    width: 20rem;
+    padding: 1.5em;
+    color: #000;
+    font-weight: 500;
+    height: 2.2rem;
+    filter: drop-shadow(0 0 0.1rem rgb(117, 223, 122));
+    border: 1px solid rgb(117, 223, 122);
+}
+
+
+.section1>form>input:nth-of-type(3) {
+    margin-right: 0.5rem;
+}
+
+.section1>form>input:hover,
+input:focus {
+    filter: drop-shadow(0 0 0.4rem rgb(117, 223, 122));
+}
+
+.section1>form>label {
+    font-weight: 400;
+}
+
+.section1>form>input::placeholder {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.section1>form>button {
+    margin: 0.8em 0;
+    padding: 0.3em 4em;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-radius: 30px;
+    color: #ffff;
+    border: none;
+    background-color: rgb(117, 223, 122);
+    transition: 1ms all;
+}
+
+.section1>form>button:hover {
+    background-color: #ffff;
+    color: rgb(117, 223, 122);
+    border: 1px solid rgb(117, 223, 122);
+    filter: drop-shadow(0 0 0.4rem rgb(117, 223, 122));
+}
+
+.section1>form>span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.section1>form>span:nth-of-type(3) {
+    font-weight: 500;
+    color: rgb(117, 223, 122);
+    transition: 1s all;
+}
+
+.section1>form>span:nth-of-type(3):hover {
+    text-decoration: underline;
+}
+
+.section1>form>span>a {
+    margin-left: 1em;
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(117, 223, 122);
+    transition: 1s all;
+}
+
+.section1>form>span>a:hover {
+    text-decoration: underline;
+}
+
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(117, 223, 122);
+    padding: 2em 4em;
+}
+
+.section2>h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.section2>form {
+    padding-top: 1em;
+}
+
+.section2>form>input {
+    background-color: #ffff;
+    margin: 0.1em 0;
+    width: 20rem;
+    padding: 1.5em;
+    color: #000;
+    font-weight: 500;
+    height: 2.2rem;
+    border: 1px solid rgb(117, 223, 122);
+    filter: drop-shadow(0 0 0.1rem rgb(117, 223, 122));
+    transition: 1s background-color;
+}
+
+.section2>form>input:hover,
+input:focus {
+    filter: drop-shadow(0 0 0.4rem rgb(117, 223, 122));
+}
+
+.section2>form>input::placeholder {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.section2>form>button {
+    margin: 0.8em 0;
+    padding: 0.3em 4em;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-radius: 30px;
+    color: #ffff;
+    border: none;
+    background-color: rgb(117, 223, 122);
+    transition: 1ms all;
+}
+
+.section2>form>button:hover {
+    background-color: #ffff;
+    color: rgb(117, 223, 122);
+    border: 1px solid rgb(117, 223, 122);
+    filter: drop-shadow(0 0 0.4rem rgb(117, 223, 122));
+}
+
+
+.section2>form>span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.section2>form>span>a {
+    margin-left: 1em;
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(117, 223, 122);
+    transition: 1s all;
+}
+
+.section2>form>span>a:hover {
+    text-decoration: underline;
+}
+
+.section--hidden {
+    display: none;
+}
+
+@media (max-width: 420px) {
+
+    .section1>form>input:nth-of-type(1),
+    input:nth-of-type(2) {
+        width: 16rem;
+        height: 2rem;
+    }
+
+    .section1>form>button {
+        padding: 0.3em 3em;
+    }
+
+    .section1 {
+        padding: 1.8em;
+    }
+
+    .section2>form>input {
+        width: 16rem;
+        height: 2.2rem;
+    }
+
+    .section2>form>button {
+        padding: 0.3em 3em;
+    }
+
+    .section2 {
+        padding: 2em 1.5em;
+    }
+}
+
+@media (max-width: 280px) {
+
+    .section1>form>input:nth-of-type(1),
+    input:nth-of-type(2) {
+        width: 13rem;
+        height: 2.2rem;
+        font-size: 0.8em;
+    }
+
+    .section1>form>button {
+        padding: 0.3em 2em;
+        font-size: 1em;
+    }
+
+    .section1 {
+        padding: 1.2em;
+    }
+
+    .section1>form>span {
+        font-size: 0.8rem;
+    }
+
+    .section2>form>input {
+        width: 13rem;
+        height: 2.2rem;
+    }
+
+    .section2>form>button {
+        padding: 0.3em 2em;
+    }
+
+    .section2 {
+        padding: 2em 1em;
+    }
+
+    .section2>form>span {
+        font-size: 0.8rem;
+    }
+}

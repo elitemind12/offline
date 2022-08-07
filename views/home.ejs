@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+
+<body>
+    <div class="section1" id="login">
+        <h2>Login</h2>
+        <form action="#none">
+            <input type="text" name="username" id="userlogin" placeholder="Enter your username">
+            <br>
+            <span  id="userErr"></span>
+            <br>
+            <input type="password" name="password" id="passlogin" placeholder="Enter your password">
+            <br>
+            <span id="userPass"></span>
+            <br>
+            <input type="checkbox" name="" id="me">
+            <label for="me">Remember me</label>
+            <br>
+            <button>Login</button>
+            <br>
+            <span>forgot your password?</span>
+            <br>
+            <span>Don't have an account? <a href="" id="SignUp">Sign Up</a></span>
+        </form>
+    </div>
+    <div class="section2 section--hidden" id="createAccount">
+        <h2>Sign Up</h2>
+        <form action="">
+            <input type="text" name="" id="" placeholder="First Name">
+            <br>
+            <span></span>
+            <br>
+            <input type="text" name="" id="" placeholder="Last Name">
+            <br>
+            <span></span>
+            <br>
+            <input type="email" name="" id="email" placeholder="Email Address">
+            <br>
+            <span id="emailSpan"></span>
+            <br>
+            <input type="password" name="" id="passRegister" placeholder="Password">
+            <br>
+            <span id="passSpan"></span>
+            <br>
+            <input type="password" name="" id="confirmRegister" placeholder="Confirm Password">
+            <br>
+            <span id="confirmSpan"></span>
+            <br>
+            <button>Sign Up</button>
+            <br>
+            <br>
+            <span>Arleady have an account? <a href="" id="SignIn">Sign In</a></span>
+        </form>
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>
